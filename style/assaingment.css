@@ -1,0 +1,17 @@
+*{
+  font-family: "Open Sans", sans-serif;   
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.logo h2{
+    font-size: 45px;
+    font-weight: 219px;
+    }
+.color-ping{
+ color: 51% #FB09B4;  
+}
