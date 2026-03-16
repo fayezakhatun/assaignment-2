@@ -130,6 +130,26 @@ color:#aaa;
 .wide{
     grid-column: span 2;
 }
+/*host*/
+.host{
+   font-size: bold;
+   color: #FFFFFF;
+ background-color: #1A0B2E;
+}
+.host h2{
+    text-align: center;
+}
+.host-box{
+ display:flex;
+ align-items: center;
+justify-content:center;
+gap:30px;
+background:#1f0a3a;
+padding:30px;
+border-radius:10px;
+margin-top:40px;
+
+}
 
 @media screen {
     
