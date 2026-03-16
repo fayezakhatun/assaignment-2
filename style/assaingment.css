@@ -11,6 +11,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #1A0B2E;
+   
 }
 .logo h2{
     font-size: 45px;
@@ -43,6 +44,64 @@
     cursor: pointer;
 }
 
+#banner{
+    
+    background-image: url(../assets/hero-bg.png);
+      justify-content: center;    
+}
+
+ .container{
+        position: relative; 
+         width: 200px;
+        }
+        .hero-circle{
+            width: 50%;
+        }
+        .microphone{
+            width: 100px;
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+        .p{
+            width: 40px;
+            position: absolute;
+            top: 30px;
+            left: 200px;
+            background-color: #00ff88;
+            border-radius: 10px;
+            font-size: 12px;      
+             padding: 3px 1px;    
+           }
+           .container, .hero-circle, .microphone, .p{
+            align-items: center;
+           }
+            
+        .wave{
+         text-align: center;
+         color: #FFFFFF;
+        }
+        .text{
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .buton{
+            font-size: 16px;
+            color: #FFFFFF;
+            padding: 10px 25px;
+            border: none;
+            background: linear-gradient(90deg,#F7E93F,#ff00cc,#9900ff);
+            border-radius: 20px;
+        }
+        .button{
+            text-align: center;
+            border-radius: 1px solid #00ff88;
+            color: #00ff88;
+        }
+        .button-point{
+           display: flex;
+           justify-content: center;
+        }
 #podcast {
    background-color: #1A0B2E;
    color: #FFFFFF;
@@ -98,7 +157,7 @@ color:#aaa;
     margin:80px;
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 3;
     gap:25px;
 }
 
@@ -125,10 +184,12 @@ color:#aaa;
 }
 .big{
     grid-row: span 2;
+    grid-column: span 1;
 }
 
 .wide{
     grid-column: span 2;
+    grid-row: span 1;
 }
 /*host*/
 .host{
@@ -148,9 +209,90 @@ background:#1f0a3a;
 padding:30px;
 border-radius:10px;
 margin-top:40px;
+margin-left: 80px;
+margin-right: 80px;
+
+}
+.icon{
+    align-items: center;
+}
+#footer{
+    padding: 120px;
+text-align:center;
+background-image: url(../assets/footer-bg.png);
 
 }
 
-@media screen {
-    
+.footer-item{
+    justify-content: space-between;
+    gap: 20px;
+
 }
+.footer-link{
+   align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#footer, pragraph p{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 576px) and(max-width: 992px){
+    #navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    flex-wrap:wrap;
+}
+
+.nav-item{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+}
+}
+@media (max-width:992px){
+.container{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media (max-width:600px){
+.container{
+    grid-template-columns:1fr;
+}
+}
+@media (max-width:768px){
+.menu{
+    flex-direction:column;
+    align-items:center;
+}
+}
+@media (max-width:768px){
+.host-box{
+    flex-direction:column;
+    text-align:center;
+}
+}
+@media (max-width:768px){
+
+.logo h2{
+font-size:30px;
+}
+
+.title{
+font-size:30px;
+}
+
+#podcast h3{
+font-size:30px;
+}
+
+} 
